@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <h1>To Do List App</h1>
+    <p class="inform"></p>
+    <section class="card">
+        <label for="task">Task</label>
+        <input id="task" type="text" placeholder="Task to be Completed">
+        <br>
+        <label for="date">Date</label>
+        <input type="text" id="date" placeholder="Date" onfocus="this.type = 'date'" onblur="this.type = 'text'">
+        <br>
+        <input type="submit" value="Add Task" id ="submit">
+        
+    </section>
+    <section class="table">
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Task</th>
+                    <th>Due Date</th>
+                    <th></th>
+                </tr>
+                
+            </thead>
+            <tbody id="table-body">
+                
+
+            </tbody>
+            
+        </table>
+       
+    </section>
+    
+</body>
+<script src="main.js">
+
+</script>
+</html>
